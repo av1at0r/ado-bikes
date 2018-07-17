@@ -1,0 +1,13 @@
+@import "mixins";
+
+.socials__lsit {
+  @include reset-list;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 15px;
+}

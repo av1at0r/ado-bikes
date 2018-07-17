@@ -1,0 +1,61 @@
+@import "../mixins";
+
+.subscribe {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+}
+
+.subscribe__form {
+  grid-column: 2 / 3;
+  padding: 19.66% 0;
+}
+
+.subscribe__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.subscribe__title {
+  margin: 0 0 30px 0;
+  color: #848789;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.subscribe-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe__input {
+  display: block;
+  box-sizing: border-box;
+  border: 1px #d3d7d9 solid;
+  width: 74.9%;
+  height: 70px;
+  padding-left: 7%;
+}
+
+.subscribe__input,
+.subscribe__input::placeholder {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.subscribe__submit {
+  @include reset-button;
+  width: 23.5955%;
+  height: 70px;
+
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  background-color: #64c29e;
+}

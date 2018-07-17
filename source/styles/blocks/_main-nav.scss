@@ -1,0 +1,40 @@
+@import "mixins";
+
+.main-nav {
+
+}
+
+.main-nav__list {
+  @include reset-list;
+  width: 620px;
+  height: 85px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__item {
+  width: 20%;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  color: #4d4959;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.main-nav__item:nth-child(odd)::after {
+  content: '.';
+  position: absolute;
+  right: 0;
+}
+
+.main-nav__item:nth-child(2) {
+  margin-right: 20%;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #4d4959;
+}

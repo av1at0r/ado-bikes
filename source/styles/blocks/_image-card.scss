@@ -1,0 +1,23 @@
+.image-card {
+  position: relative;
+  grid-column: span 2;
+  overflow: hidden;
+}
+
+.image-card--mini {
+  grid-column: span 1;
+}
+
+.image-card__image {
+  display: block;
+  height: 100%;
+}
+
+.image-card__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

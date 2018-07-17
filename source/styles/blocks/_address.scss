@@ -1,0 +1,14 @@
+.address {
+  padding-left: 50%;
+  font-size: 14px;
+  font-style: italic;
+  color: #848789;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.address b {
+  font-style: normal;
+}

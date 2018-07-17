@@ -1,0 +1,71 @@
+.bike-card {
+  height: 100%;
+  grid-column: span 1;
+  background-color: white;
+  text-align: center;
+}
+
+.bike-card__content-wrapper {
+  position: relative;
+  padding: 70px;
+  padding-bottom: 95px;
+}
+
+.bike-card__content-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid white;
+}
+
+.bike-card__icon {
+  margin-bottom: 25px;
+}
+
+.bike-card__title {
+  margin: 0 0 25px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #353738;
+}
+
+.bike-card__content {
+  margin: 0;
+  position: relative;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.bike-card__content::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -43px;
+  display: block;
+  width: 50px;
+  height: 1px;
+
+  background-color: rgba(black, 0.2);
+}
+
+.bike-card__image-wrapper {
+  background-color: black;
+  overflow: hidden;
+}
+
+.bike-card__image {
+  background-color: white;
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,23 @@
+.main-header {
+  width: 100%;
+  min-height: 800px;
+  padding-top: 35px;
+  background-repeat: no-repeat;
+  background-image: url('../img/header-bg.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+
+.main-header__nav {
+
+}
+
+.main-header__logo {
+  position: absolute;
+  width: 96px;
+  height: 85px;
+  left: 0;
+  right: 0;
+  top: 35px;
+  margin: 0 auto;
+}

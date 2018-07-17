@@ -1,0 +1,62 @@
+@import "mixins";
+
+.social-slider {
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.social-slider__list, .social-slider__controls {
+  @include reset-list;
+}
+
+.social-slider__list {
+  height: 100%;
+}
+
+.social-slider__slide {
+  height: 100%;
+  display: none;
+}
+
+.social-slider__slide--active {
+  display: block;
+}
+
+.social-slider__controls {
+  position: absolute;
+  bottom: 70px;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-slider__control {
+  @include reset-button;
+
+  display: block;
+  height: 11px;
+  width: 11px;
+  margin: 0 5px;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  border: 1px #a9afb3 solid;
+
+  cursor: pointer;
+}
+
+
+.social-slider__control:hover,
+.social-slider__control:focus {
+  background-color: #cfcfcf;
+
+}
+
+.social-slider__control:active {
+  background-color: #7a8186;
+}
+
+.social-slider__control--active {
+  background-color: #a9afb3;
+}
