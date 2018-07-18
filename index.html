@@ -9,7 +9,10 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-header__nav main-nav">
+      <nav id="js-main-nav" class="main-header__nav main-nav">
+        <button id="js-main-nav__menu-toggle" class="main-nav__menu-toggle" aria-label="Open menu">
+          <div></div>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#">About Us</a></li>
           <li class="main-nav__item"><a href="#">Work</a></li>
@@ -31,11 +34,11 @@
             <use xlink:href="img/sprite.svg#chain"></use>
           </svg>
           <h2 class="intro__title">A new generation of vintage bike</h2>
-          <p class="intro__content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever <br>
-            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only <br>
+          <p class="intro__content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
         </section>
-        <div class="image-card">
+        <div class="image-card index-main__image-card">
           <svg class="image-card__icon" width="113" height="118" role="img">
             <title>Bicycle company. Since 1926</title>
             <use xlink:href="img/sprite.svg#main-logo-1"></use>
@@ -59,12 +62,12 @@
               and scrambled it to make a type specimen book. It has survived.
             </p>
           </div>
-          <div class="bike-card__image-wrapper">
+          <!-- <div class="bike-card__image-wrapper"> -->
             <picture>
               <source srcset="img/row-1-2@2x.webp 1x, img/row-1-2@2x.webp 2x" type="image/webp">
               <img class="bike-card__image" src="img/row-1-2@1x.jpg" srcset="img/row-1-2@2x.jpg 2x" alt="">
             </picture>
-          </div>
+          <!-- </div> -->
         </section>
         <section class="index-main__card bike-card">
           <div class="bike-card__content-wrapper">
@@ -86,7 +89,7 @@
             </picture>
           </div>
         </section>
-        <div class="image-card">
+        <div class="image-card index-main__image-card index-main__image-card">
           <svg class="image-card__icon" width="177" height="152" role="img">
             <title>Vintage 79. Hand crafted bicycles</title>
             <use xlink:href="img/sprite.svg#main-logo-2"></use>
@@ -96,7 +99,7 @@
             <img class="image-card__image" src="img/row-2-2@1x.jpg" srcset="img/row-2-2@2x.jpg 2x" alt="">
           </picture>
         </div>
-        <div class="image-card image-card--mini">
+        <div class="image-card index-main__image-card index-main__image-card--mini">
           <svg class="image-card__icon" width="208" height="67" role="img">
             <title>Bicycles. Since 1926</title>
             <use xlink:href="img/sprite.svg#main-logo-3"></use>
@@ -126,7 +129,7 @@
             </picture>
           </div>
         </section>
-        <div class="image-card image-card--mini">
+        <div class="image-card index-main__image-card index-main__image-card--mini">
           <picture>
             <source srcset="img/row-3-3@2x.webp 1x, img/row-3-3@2x.webp 2x" type="image/webp">
             <img class="image-card__image" src="img/row-3-3@1x.jpg" srcset="img/row-3-3@2x.jpg 2x" alt="">
@@ -135,11 +138,11 @@
         <section class="social-slider index-main__social-slider">
           <h2 class="visually-hidden">Messages from our socials</h2>
           <ul class="social-slider__list">
-            <li class="social-slider__slide social-slider__slide--active">
+            <li id="js-social-slider__slide-1" class="social-slider__slide social-slider__slide--active">
               <article class="social-message">
-                <div class="visually-hidden">
+                <h1 class="visually-hidden">
                   Twitter message
-                </div>
+                </h1>
                 <svg class="social-message__icon" width="32" height="27">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
@@ -157,50 +160,67 @@
                 </p>
               </article>
             </li>
-            <li class="social-slider__slide social-message">
-              <svg width="32" height="27">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
-              <p class="social-message__title">
-                <span class="social-message__author">AOD New York  @aod</span>
-                <span class="social-message__time">35 min</span>
-              </p>
-              <p class="social-message__content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                quis eveniet, repudiandae quia. Eveniet ab incidunt provident
-                tempore, atque a quibusdam facere vitae.
-              </p>
+            <li id="js-social-slider__slide-2" class="social-slider__slide social-message">
+              <article class="social-message">
+                <h1 class="visually-hidden">
+                  Twitter message
+                </h1>
+                <svg class="social-message__icon" width="32" height="27">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+                <a class="social-message__to-message-link" href="#"
+                  aria-label="Get to message in social">
+                  <p class="social-message__title">
+                    <span class="social-message__author">AOD New York  @aod</span>
+                    <span class="social-message__time">30 min</span>
+                  </p>
+                </a>
+                <p class="social-message__content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+              </article>
             </li>
-            <li class="social-slider__slide social-message">
-              <svg width="32" height="27">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
-              <p class="social-message__title">
-                <span class="social-message__author">AOD New York  @aod</span>
-                <span class="social-message__time">53 min</span>
-              </p>
-              <p class="social-message__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-                tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum
-                turpis vitae, pretium ante amet.
-              </p>
+            <li id="js-social-slider__slide-3" class="social-slider__slide social-message">
+              <article class="social-message">
+                <h1 class="visually-hidden">
+                  Twitter message
+                </h1>
+                <svg class="social-message__icon" width="32" height="27">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+                <a class="social-message__to-message-link" href="#"
+                  aria-label="Get to message in social">
+                  <p class="social-message__title">
+                    <span class="social-message__author">AOD New York  @aod</span>
+                    <span class="social-message__time">55 min</span>
+                  </p>
+                </a>
+                <p class="social-message__content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore natus unde officia ad. Quasi pariatur impedit,
+                  blanditiis dolorem, sit, cumque commodi officiis voluptatum
+                  illum a voluptas praesentium ad non error!
+                </p>
+              </article>
             </li>
           </ul>
           <ul class="social-slider__controls">
             <li>
-              <button class="social-slider__control social-slider__control--active">
+              <button data-slide="1" class="social-slider__control social-slider__control--active">
                 <span class="visually-hidden">Show social message №1
                 </span>
               </button>
             </li>
             <li>
-              <button class="social-slider__control">
+              <button data-slide="2" class="social-slider__control">
                 <span class="visually-hidden">Show social message №2
                 </span>
               </button>
             </li>
             <li>
-              <button class="social-slider__control">
+              <button data-slide="3" class="social-slider__control">
                 <span class="visually-hidden">Show social message №3
                 </span>
               </button>
@@ -267,6 +287,9 @@
         </div>
         <div class="shop__discover-shop">
           <a href="#" class="shop__discover-shop-link">
+            <svg class="shop__discover-rule" role="presentation">
+              <rect width="100%" height="100%" style="fill: none;"></rect>
+            </svg>
             Discover the shop
           </a>
         </div>
@@ -335,5 +358,10 @@
         </a>
       </section>
     </footer>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/index.js">
+
+    </script>
   </body>
 </html>
