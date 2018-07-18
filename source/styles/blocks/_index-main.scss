@@ -3,6 +3,8 @@
 }
 
 .index-main__content-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: minmax(470px, auto) repeat(3, minmax(600px, auto)) minmax(470px, auto) 735px minmax(470px, auto) ;
