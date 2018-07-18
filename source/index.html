@@ -135,11 +135,11 @@
         <section class="social-slider index-main__social-slider">
           <h2 class="visually-hidden">Messages from our socials</h2>
           <ul class="social-slider__list">
-            <li class="social-slider__slide social-slider__slide--active">
+            <li id="js-social-slider__slide-1" class="social-slider__slide social-slider__slide--active">
               <article class="social-message">
-                <div class="visually-hidden">
+                <h1 class="visually-hidden">
                   Twitter message
-                </div>
+                </h1>
                 <svg class="social-message__icon" width="32" height="27">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
@@ -157,50 +157,67 @@
                 </p>
               </article>
             </li>
-            <li class="social-slider__slide social-message">
-              <svg width="32" height="27">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
-              <p class="social-message__title">
-                <span class="social-message__author">AOD New York  @aod</span>
-                <span class="social-message__time">35 min</span>
-              </p>
-              <p class="social-message__content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                quis eveniet, repudiandae quia. Eveniet ab incidunt provident
-                tempore, atque a quibusdam facere vitae.
-              </p>
+            <li id="js-social-slider__slide-2" class="social-slider__slide social-message">
+              <article class="social-message">
+                <h1 class="visually-hidden">
+                  Twitter message
+                </h1>
+                <svg class="social-message__icon" width="32" height="27">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+                <a class="social-message__to-message-link" href="#"
+                  aria-label="Get to message in social">
+                  <p class="social-message__title">
+                    <span class="social-message__author">AOD New York  @aod</span>
+                    <span class="social-message__time">30 min</span>
+                  </p>
+                </a>
+                <p class="social-message__content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+              </article>
             </li>
-            <li class="social-slider__slide social-message">
-              <svg width="32" height="27">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
-              <p class="social-message__title">
-                <span class="social-message__author">AOD New York  @aod</span>
-                <span class="social-message__time">53 min</span>
-              </p>
-              <p class="social-message__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-                tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum
-                turpis vitae, pretium ante amet.
-              </p>
+            <li id="js-social-slider__slide-3" class="social-slider__slide social-message">
+              <article class="social-message">
+                <h1 class="visually-hidden">
+                  Twitter message
+                </h1>
+                <svg class="social-message__icon" width="32" height="27">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+                <a class="social-message__to-message-link" href="#"
+                  aria-label="Get to message in social">
+                  <p class="social-message__title">
+                    <span class="social-message__author">AOD New York  @aod</span>
+                    <span class="social-message__time">55 min</span>
+                  </p>
+                </a>
+                <p class="social-message__content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore natus unde officia ad. Quasi pariatur impedit,
+                  blanditiis dolorem, sit, cumque commodi officiis voluptatum
+                  illum a voluptas praesentium ad non error!
+                </p>
+              </article>
             </li>
           </ul>
           <ul class="social-slider__controls">
             <li>
-              <button class="social-slider__control social-slider__control--active">
+              <button data-slide="1" class="social-slider__control social-slider__control--active">
                 <span class="visually-hidden">Show social message №1
                 </span>
               </button>
             </li>
             <li>
-              <button class="social-slider__control">
+              <button data-slide="2" class="social-slider__control">
                 <span class="visually-hidden">Show social message №2
                 </span>
               </button>
             </li>
             <li>
-              <button class="social-slider__control">
+              <button data-slide="3" class="social-slider__control">
                 <span class="visually-hidden">Show social message №3
                 </span>
               </button>
@@ -338,5 +355,12 @@
         </a>
       </section>
     </footer>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script> -->
+    <script src="js/index.js">
+
+    </script>
   </body>
 </html>
