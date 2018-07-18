@@ -14,24 +14,6 @@
   height: 100%;
 }
 
-@keyframes social-slider__right-center {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes social-slider__center-left {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 .social-slider__slide {
   height: 100%;
   width: 100%;
