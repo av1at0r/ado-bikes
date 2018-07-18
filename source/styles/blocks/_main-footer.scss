@@ -4,3 +4,9 @@
   min-height: 250px;
   background-color: #f7f7f7;
 }
+
+@media (max-width: 768px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+}

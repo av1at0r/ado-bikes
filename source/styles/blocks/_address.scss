@@ -12,3 +12,10 @@
 .address b {
   font-style: normal;
 }
+
+@media (max-width: 768px) {
+  .address {
+    text-align: center;
+    padding-left: 0px;
+  }
+}

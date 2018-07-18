@@ -3,6 +3,7 @@
 .social-slider {
   background-color: #f7f7f7;
   position: relative;
+  overflow: hidden;
 }
 
 .social-slider__list, .social-slider__controls {
@@ -15,12 +16,21 @@
 
 .social-slider__slide {
   height: 100%;
-  display: none;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  background-color: #f7f7f7;
 }
 
 .social-slider__slide--active {
-  display: block;
+  opacity: 1;
 }
+
+.social-slider__show-next {
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+}
+
 
 .social-slider__controls {
   position: absolute;

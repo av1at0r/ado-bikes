@@ -3,13 +3,15 @@
   min-height: 800px;
   padding-top: 35px;
   background-repeat: no-repeat;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/header-bg@1x.jpg');
   background-position: top center;
   background-size: cover;
 }
 
-.main-header__nav {
-
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-header {
+    background-image: url('../img/header-bg@2x.jpg');
+  }
 }
 
 .main-header__logo {
@@ -20,4 +22,19 @@
   right: 0;
   top: 35px;
   margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .main-header {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    min-height: 400px;
+  }
+  .main-header__logo {
+    top: 10px;
+  }
 }

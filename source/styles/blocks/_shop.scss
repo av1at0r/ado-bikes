@@ -15,22 +15,20 @@
   max-width: 100%;
 }
 
-.shop__image-container:nth-child(3) {
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-.shop__image-container:nth-child(4) {
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-
 .shop__image-container--double-vertical {
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row: span 2;
 }
 
 .shop__image-container--double-horisontal {
   grid-column: span 2;
+}
+
+.shop__image-container--double-vertical:nth-child(4) {
+  grid-column-start: 3;
+}
+
+.shop__image-container--double-vertical:nth-child(5) {
+  grid-column-start: 4;
 }
 
 .shop__to-shop-link {
@@ -51,7 +49,6 @@
   height: 100%;
   background-color: rgba(#64c29e, 0.8);
   transition: opacity 0.15s ease-out;
-  opacity: 0;
 }
 
 .shop__link-icon-wrapper {
@@ -66,7 +63,6 @@
   height: 60px;
   text-align: center;
   transition: opacity 0.25s linear;
-  opacity: 0;
 }
 
 .shop__link-icon {
@@ -86,11 +82,6 @@
   font-weight: bold;
   text-transform: uppercase;
   color: white;
-}
-
-.shop__to-shop-link:hover::after,
-.shop__to-shop-link:hover .shop__link-icon-wrapper {
-  opacity: 1;
 }
 
 .shop__discover-shop {
@@ -119,56 +110,39 @@
   text-align: center;
 
   border: 1px solid #94979a;
-  overflow: hidden;
 }
 
-.shop__discover-shop-link::before {
-  content: '';
+.shop__discover-rule {
   position: absolute;
-  display: block;
   width: 100%;
   height: 100%;
-  top: -100%;
+  top: 0;
   left: 0;
-  background-color: rgba(white, 0.1);
+  stroke-width: 5px;
+  stroke: white;
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  transition: stroke-dashoffset 1s ease-out;
 }
 
-.shop__discover-shop-link:hover::before {
-  animation-name: discover-shop-background;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-out;
-  top: 0%;
-  background-color: rgba(white, 0.3);
+.shop__discover-shop-link:focus {
+  outline: 0;
 }
 
-.shop__discover-shop-link:hover {
-  animation-name: discover-shop-box-shadow;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-out;
-  box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+.shop__discover-shop-link:hover .shop__discover-rule,
+.shop__discover-shop-link:focus .shop__discover-rule, {
+  stroke-dashoffset: 0;
 }
 
-@keyframes discover-shop-background {
-  0% {
-    top: -100%;
+@media (max-width: 768px) {
+  .shop {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 200px;
   }
-  90% {
-    background-color: rgba(white, 0.1);
-    top: 0%;
-  }
-  100% {
-    background-color: rgba(white, 0.3);
-  }
-}
-
-@keyframes discover-shop-box-shadow {
-  0% {
-    box-shadow: none;
-  }
-  95% {
-    box-shadow: none;
-  }
-  100% {
-    box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+  .shop-image {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
