@@ -44,3 +44,23 @@ function animateSlides(toHide, toShow) {
     });
   }
 }
+
+const menuButton = document.getElementById('js-main-nav__menu-toggle');
+const mainNav = document.getElementById('js-main-nav');
+const mainNavList = mainNav.querySelector('ul.main-nav__list');
+menuButton.onclick = (e) => {
+  menuButton.classList.toggle('main-nav__menu-toggle--opened');
+  if (mainNav.classList.contains('main-nav--opened')) {
+    TweenLite.fromTo(mainNavList, 0.3, { yPercent: 0 }, {
+      yPercent: -100,
+      onComplete: () => mainNav.classList.remove('main-nav--opened'),
+      clearProps:"all",
+    })
+  } else {
+    TweenLite.fromTo(mainNavList, 0.3, { yPercent: -100 }, {
+      yPercent: 0,
+      onStart: () => mainNav.classList.add('main-nav--opened'),
+      clearProps:"all",
+    })
+  }
+}

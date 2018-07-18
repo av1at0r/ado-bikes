@@ -3,12 +3,15 @@
   grid-column: span 1;
   background-color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .bike-card__content-wrapper {
   position: relative;
   padding: 12%;
   padding-bottom: 95px;
+  margin-bottom: auto;
 }
 
 .bike-card__content-wrapper::after {
@@ -61,11 +64,14 @@
 
 .bike-card__image-wrapper {
   background-color: black;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .bike-card__image {
   background-color: white;
   display: block;
   max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

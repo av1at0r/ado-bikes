@@ -9,7 +9,7 @@
 
 .social-message__content {
   width: 60%;
-  min-width: 320px;
+  min-width: 500px;
 }
 
 .social-message__icon {
@@ -33,6 +33,7 @@
 
 .social-message__time {
   font-weight: 300;
+  color: #353738;
 }
 
 .social-message__time::before {

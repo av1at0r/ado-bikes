@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+.main-nav__menu-toggle {
+  display: none;
+}
+
 .main-nav__item {
   width: 20%;
   text-align: center;
@@ -22,6 +26,18 @@
   color: #4d4959;
   font-size: 13px;
   font-weight: bold;
+}
+
+
+.main-nav__item a:hover,
+.main-nav__item a:focus {
+  outline: 0;
+  color: #D64266;
+}
+
+.main-nav__item a:active {
+  outline: 0;
+  color: #B32B83;
 }
 
 .main-nav__item:nth-child(odd)::after {
@@ -37,4 +53,102 @@
 .main-nav__item a {
   text-decoration: none;
   color: #4d4959;
+}
+
+
+@media (max-width: 600px) {
+  .main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .main-nav__menu-toggle {
+    @include reset-button;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: 20;
+  }
+
+  .main-nav__menu-toggle div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: 5px;
+    width: 50px;
+    background-color: #64c29e;
+    transition: background-color 0.2s ease-out;
+  }
+
+  .main-nav__menu-toggle div::before,
+  .main-nav__menu-toggle div::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 50px;
+    background-color: #64c29e;
+    transition-property: top, bottom, transform;
+    transition-duration: 0.3s;
+  }
+
+  .main-nav__menu-toggle div::before {
+    top: 15px;
+  }
+
+  .main-nav__menu-toggle div::after {
+    bottom: 15px;
+  }
+
+  .main-nav__menu-toggle--opened div {
+    background-color: transparent;
+  }
+
+  .main-nav__menu-toggle--opened div::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .main-nav__menu-toggle--opened div::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  .main-nav__list {
+    display: none;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin: 0;
+  }
+  .main-nav__item::after {
+    content: '';
+    display: none;
+    position: static;
+  }
+  .main-nav__item {
+    width: 100%;
+  }
+
+  .main-nav__item a {
+    display: block;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    background-color: rgba(black, 0.6);
+  }
 }

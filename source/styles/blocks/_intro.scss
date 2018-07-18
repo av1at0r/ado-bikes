@@ -1,5 +1,5 @@
 .intro {
-  padding: 115px 0 50px 0;
+  padding: 115px 15% 50px 15%;
   height: 100%;
   box-sizing: border-box;
   background-color: #f7f7f7;
@@ -20,10 +20,20 @@
 }
 
 .intro__content {
-  max-width: 69%;
-  margin: 0 auto;
   font-size: 18px;
   font-weight: 400;
   color: #848789;
   line-height: 34px;
+}
+
+@media (max-width: 768px) {
+  .intro__content {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    padding: 5%;
+  }
 }

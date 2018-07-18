@@ -9,7 +9,10 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-header__nav main-nav">
+      <nav id="js-main-nav" class="main-header__nav main-nav">
+        <button id="js-main-nav__menu-toggle" class="main-nav__menu-toggle" aria-label="Open menu">
+          <div></div>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#">About Us</a></li>
           <li class="main-nav__item"><a href="#">Work</a></li>
@@ -35,7 +38,7 @@
             since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
         </section>
-        <div class="image-card">
+        <div class="image-card index-main__image-card">
           <svg class="image-card__icon" width="113" height="118" role="img">
             <title>Bicycle company. Since 1926</title>
             <use xlink:href="img/sprite.svg#main-logo-1"></use>
@@ -59,12 +62,12 @@
               and scrambled it to make a type specimen book. It has survived.
             </p>
           </div>
-          <div class="bike-card__image-wrapper">
+          <!-- <div class="bike-card__image-wrapper"> -->
             <picture>
               <source srcset="img/row-1-2@2x.webp 1x, img/row-1-2@2x.webp 2x" type="image/webp">
               <img class="bike-card__image" src="img/row-1-2@1x.jpg" srcset="img/row-1-2@2x.jpg 2x" alt="">
             </picture>
-          </div>
+          <!-- </div> -->
         </section>
         <section class="index-main__card bike-card">
           <div class="bike-card__content-wrapper">
@@ -86,7 +89,7 @@
             </picture>
           </div>
         </section>
-        <div class="image-card">
+        <div class="image-card index-main__image-card index-main__image-card">
           <svg class="image-card__icon" width="177" height="152" role="img">
             <title>Vintage 79. Hand crafted bicycles</title>
             <use xlink:href="img/sprite.svg#main-logo-2"></use>
@@ -96,7 +99,7 @@
             <img class="image-card__image" src="img/row-2-2@1x.jpg" srcset="img/row-2-2@2x.jpg 2x" alt="">
           </picture>
         </div>
-        <div class="image-card image-card--mini">
+        <div class="image-card index-main__image-card index-main__image-card--mini">
           <svg class="image-card__icon" width="208" height="67" role="img">
             <title>Bicycles. Since 1926</title>
             <use xlink:href="img/sprite.svg#main-logo-3"></use>
@@ -126,7 +129,7 @@
             </picture>
           </div>
         </section>
-        <div class="image-card image-card--mini">
+        <div class="image-card index-main__image-card index-main__image-card--mini">
           <picture>
             <source srcset="img/row-3-3@2x.webp 1x, img/row-3-3@2x.webp 2x" type="image/webp">
             <img class="image-card__image" src="img/row-3-3@1x.jpg" srcset="img/row-3-3@2x.jpg 2x" alt="">
@@ -357,8 +360,6 @@
     </footer>
     <script src="js/TweenLite.min.js"></script>
     <script src="js/CSSPlugin.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script> -->
     <script src="js/index.js">
 
     </script>
