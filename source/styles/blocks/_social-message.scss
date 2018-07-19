@@ -8,8 +8,7 @@
 }
 
 .social-message__content {
-  width: 60%;
-  min-width: 500px;
+  padding: 0 20%;
 }
 
 .social-message__icon {
@@ -44,4 +43,16 @@
 .social-message__content {
   margin: 0;
   font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .social-message__content {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-message__content {
+    text-align: justify;
+  }
 }
