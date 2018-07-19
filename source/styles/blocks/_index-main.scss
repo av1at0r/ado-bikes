@@ -57,7 +57,7 @@
 @media (max-width: 600px) {
   .index-main__content-wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(370px, auto) repeat(7, auto) minmax(370px, auto) 735px minmax(370px, auto) ;
+    grid-template-rows: minmax(370px, auto) repeat(7, auto) minmax(370px, auto) auto minmax(370px, auto) ;
   }
   .index-main__image-card {
     grid-column: span 1;
