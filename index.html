@@ -5,9 +5,18 @@
     <link rel="preload" href="fonts/lato-regular.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/lato-bold.woff2" as="font" crossorigin>
     <link rel="preload" href="css/style.css" as="style">
+    <link media="(max-width: 600px) and (min-resolution: 2.5dppx)" rel="preload" as="image" href="img/header-bg-600@3x.jpg">
+    <link media="(max-width: 600px) and (min-resolution: 1.5dppx) and (max-resolution: 2.4dppx)" rel="preload" as="image" href="img/header-bg-600@2x.jpg">
+    <link media="(max-width: 600px) and (max-resolution: 1.4dppx)" rel="preload" as="image" href="img/header-bg-600@1x.jpg">
+    <link media="(max-width: 1000px) and min-width(600px) and (min-resolution: 1.5dppx) and (max-resolution: 2.4dppx)" rel="preload" as="image" href="img/header-bg-1000@2x.jpg">
+    <link media="(max-width: 1000px) and min-width(601px) and (max-resolution: 1.4dppx)" rel="preload" as="image" href="img/header-bg-1000@1x.jpg">
+    <link media="(max-width: 1000px) and min-width(601px) and (min-resolution: 2.5dppx)" rel="preload" as="image" href="img/header-bg-1000@3x.jpg">
+    <link media="(min-width: 1001px) and (min-resolution: 2.5dppx)" rel="preload" as="image" href="img/header-bg-orig@3x.jpg">
+    <link media="(min-width: 1001px) and (min-resolution: 1.5dppx) and (max-resolution: 2.4dppx)" rel="preload" as="image" href="img/header-bg-orig@2x.jpg">
+    <link media="(min-width: 1001px) and (max-resolution: 1.4dppx)" rel="preload" as="image" href="img/header-bg-orig@1x.jpg">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>Vintage Bike</title>
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -376,9 +385,9 @@
         </a>
       </section>
     </footer>
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/CSSPlugin.min.js"></script>
-    <script src="js/index.js">
+    <script src="js/TweenLite.min.js" async></script>
+    <script src="js/CSSPlugin.min.js" async></script>
+    <script src="js/index.js" async>
 
     </script>
   </body>

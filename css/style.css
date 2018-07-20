@@ -369,31 +369,31 @@ body {
   top: 35px;
   margin: 0 auto; }
 
-@media (max-width: 1001px) {
+@media (max-width: 1000px) {
   .main-header {
     min-height: 600px;
     background-image: url("../img/header-bg-1000@1x.jpg"); } }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1001px), (min-resolution: 144dpi) and (max-width: 1001px), (min-resolution: 1.5dppx) and (max-width: 1001px) {
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1000px), (min-resolution: 144dpi) and (max-width: 1000px), (min-resolution: 1.5dppx) and (max-width: 1000px) {
   .main-header {
     background-image: url("../img/header-bg-1000@2x.jpg"); } }
 
-@media (max-width: 1001px) and (-webkit-min-device-pixel-ratio: 2.5), (max-width: 1001px) and (min-resolution: 240dpi), (max-width: 1001px) and (min-resolution: 2.5dppx) {
+@media (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2.5), (max-width: 1000px) and (min-resolution: 240dpi), (max-width: 1000px) and (min-resolution: 2.5dppx) {
   .main-header {
     background-image: url("../img/header-bg-1000@3x.jpg"); } }
 
-@media (max-width: 601px) {
+@media (max-width: 600px) {
   .main-header {
     min-height: 400px;
     background-image: url("../img/header-bg-600@1x.jpg"); }
   .main-header__logo {
     top: 10px; } }
 
-@media (max-width: 601px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 601px) and (min-resolution: 144dpi), (max-width: 601px) and (min-resolution: 1.5dppx) {
+@media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 600px) and (min-resolution: 144dpi), (max-width: 600px) and (min-resolution: 1.5dppx) {
   .main-header {
     background-image: url("../img/header-bg-600@2x.jpg"); } }
 
-@media (max-width: 601px) and (-webkit-min-device-pixel-ratio: 2.5), (max-width: 601px) and (min-resolution: 240dpi), (max-width: 601px) and (min-resolution: 2.5dppx) {
+@media (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2.5), (max-width: 600px) and (min-resolution: 240dpi), (max-width: 600px) and (min-resolution: 2.5dppx) {
   .main-header {
     background-image: url("../img/header-bg-600@3x.jpg"); } }
 
