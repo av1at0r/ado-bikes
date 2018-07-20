@@ -1,0 +1,81 @@
+@import "mixins";
+
+.slider {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.slider__list, .slider__controls {
+  @include reset-list;
+}
+
+.slider__list {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__slide {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #f7f7f7;
+}
+
+.slider__slide--left {
+  transform: translate(-100%, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+.slider__slide--right {
+  transform: translate(100%, 0);
+	transform: translate3d(100%, 0, 0);
+}
+.slider__slide--center {
+  transform: translate(0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slider__slide--animating {
+	transition: transform 200ms linear;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 70px;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slider__control {
+  @include reset-button;
+
+  display: block;
+  height: 11px;
+  width: 11px;
+  margin: 0 5px;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  border: 1px #a9afb3 solid;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+
+.slider__control:hover,
+.slider__control:focus {
+  background-color: #cfcfcf;
+
+}
+
+.slider__control:active {
+  background-color: #7a8186;
+}
+
+.slider__control--active {
+  background-color: #a9afb3;
+}

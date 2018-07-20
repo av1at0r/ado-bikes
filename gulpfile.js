@@ -11,7 +11,7 @@ const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync');
 const notify = require('gulp-notify');
 const webp = require('gulp-webp');
-
+const uglify = require('gulp-uglify-es').default;
 gulp.task('clean', function () {
   return del('build');
 });
@@ -89,6 +89,7 @@ gulp.task("webp", function() {
 
 gulp.task('js', function () {
   return gulp.src("source/js/*.js", { base: 'source' })
+  .pipe(uglify())
   .pipe(gulp.dest("build"))
 });
 

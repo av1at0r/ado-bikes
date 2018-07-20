@@ -40,6 +40,10 @@
   grid-column: span 1;
 }
 
+.index-main__slider {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 1000px) {
   .index-main__content-wrapper {
     grid-template-columns: 1fr 1fr;
