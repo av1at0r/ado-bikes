@@ -1,4 +1,5 @@
 'use strict';
+
 class Slider {
   constructor(sliderElem) {
     this.detecting = false;
