@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="fonts/lato-regular.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/lato-bold.woff2" as="font" crossorigin>
     <link rel="preload" href="css/style.css" as="style">
-    <link media="(max-width: 600px) and (min-resolution: 2.5dppx)" rel="preload" as="image" href="img/header-bg-600@3x.jpg">
-    <link media="(max-width: 600px) and (min-resolution: 1.5dppx) and (max-resolution: 2.4dppx)" rel="preload" as="image" href="img/header-bg-600@2x.jpg">
-    <link media="(max-width: 600px) and (max-resolution: 1.4dppx)" rel="preload" as="image" href="img/header-bg-600@1x.jpg">
-    <link media="(max-width: 1000px) and min-width(600px) and (min-resolution: 1.5dppx) and (max-resolution: 2.4dppx)" rel="preload" as="image" href="img/header-bg-1000@2x.jpg">
-    <link media="(max-width: 1000px) and min-width(601px) and (max-resolution: 1.4dppx)" rel="preload" as="image" href="img/header-bg-1000@1x.jpg">
-    <link media="(max-width: 1000px) and min-width(601px) and (min-resolution: 2.5dppx)" rel="preload" as="image" href="img/header-bg-1000@3x.jpg">
-    <link media="(min-width: 1001px) and (min-resolution: 2.5dppx)" rel="preload" as="image" href="img/header-bg-orig@3x.jpg">
-    <link media="(min-width: 1001px) and (min-resolution: 1.5dppx) and (max-resolution: 2.4dppx)" rel="preload" as="image" href="img/header-bg-orig@2x.jpg">
-    <link media="(min-width: 1001px) and (max-resolution: 1.4dppx)" rel="preload" as="image" href="img/header-bg-orig@1x.jpg">
+    <link media="(max-width:  600px) and (min-resolution: 250dpi)" rel="preload" as="image" href="img/header-bg-600@3x.jpg">
+    <link media="(max-width:  600px) and (min-resolution: 144dpi) and (max-resolution: 249dpi)" rel="preload" as="image" href="img/header-bg-600@2x.jpg">
+    <link media="(max-width:  600px) and (max-resolution: 143dpi)" rel="preload" as="image" href="img/header-bg-600@1x.jpg">
+    <link media="(max-width:  1000px) and (min-width:  601px) and (min-resolution: 144dpi) and (max-resolution: 249dpi)" rel="preload" as="image" href="img/header-bg-1000@2x.jpg">
+    <link media="(max-width:  1000px) and (min-width:  601px) and (max-resolution: 143dpi)" rel="preload" as="image" href="img/header-bg-1000@1x.jpg">
+    <link media="(max-width:  1000px) and (min-width:  601px) and (min-resolution: 250dpi)" rel="preload" as="image" href="img/header-bg-1000@3x.jpg">
+    <link media="(min-width:  1001px) and (min-resolution: 250dpi)" rel="preload" as="image" href="img/header-bg-orig@3x.jpg">
+    <link media="(min-width:  1001px) and (min-resolution: 144dpi) and (max-resolution: 249dpi)" rel="preload" as="image" href="img/header-bg-orig@2x.jpg">
+    <link media="(min-width:  1001px) and (max-resolution: 143dpi)" rel="preload" as="image" href="img/header-bg-orig@1x.jpg">
     <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
     <title>Vintage Bike</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="main-header">
       <nav id="js-main-nav" class="main-header__nav main-nav">
         <button id="js-main-nav__menu-toggle" class="main-nav__menu-toggle" aria-label="Open menu">
-          <div></div>
+          <span></span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#">About Us</a></li>
@@ -52,21 +52,20 @@
             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
         </section>
         <div class="image-card index-main__image-card">
-          <svg class="image-card__icon" width="113" height="118" role="img" alt="Bicycle company. Since 1926">
+          <svg class="image-card__icon" width="113" height="118" role="img">
             <title>Bicycle company. Since 1926</title>
             <use xlink:href="img/sprite.svg#main-logo-1"></use>
           </svg>
           <picture>
-            <source media="(min-width:1001px)" srcset="img/row-1-1-orig@1x.webp 1x, img/row-1-1-orig@2x.webp 2x, img/row-1-1-orig@3x.webp 3x" type="image/webp">
-            <source media="(min-width:1001px)" srcset="img/row-1-1-orig@1x.jpg 1x, img/row-1-1-orig@2x.jpg 2x, img/row-1-1-orig@3x.jpg 3x" type="image/jpg">
-            <source media="(min-width:601px)" srcset="img/row-1-1-1000@1x.webp 1x, img/row-1-1-1000@2x.webp 2x, img/row-1-1-1000@3x.webp 3x" type="image/webp">
-            <source media="(min-width:601px)" srcset="img/row-1-1-1000@1x.jpg 1x, img/row-1-1-1000@2x.jpg 2x, img/row-1-1-1000@3x.jpg 3x" type="image/jpg">
-            <source media="(max-width:600px)" srcset="img/row-1-1-600@1x.webp 1x, img/row-1-1-600@2x.webp 2x, img/row-1-1-600@3x.webp 3x" type="image/webp">
+            <source media="(min-width: 1001px)" srcset="img/row-1-1-orig@1x.webp 1x, img/row-1-1-orig@2x.webp 2x, img/row-1-1-orig@3x.webp 3x" type="image/webp">
+            <source media="(min-width: 1001px)" srcset="img/row-1-1-orig@1x.jpg 1x, img/row-1-1-orig@2x.jpg 2x, img/row-1-1-orig@3x.jpg 3x" type="image/jpg">
+            <source media="(min-width: 601px)" srcset="img/row-1-1-1000@1x.webp 1x, img/row-1-1-1000@2x.webp 2x, img/row-1-1-1000@3x.webp 3x" type="image/webp">
+            <source media="(min-width: 601px)" srcset="img/row-1-1-1000@1x.jpg 1x, img/row-1-1-1000@2x.jpg 2x, img/row-1-1-1000@3x.jpg 3x" type="image/jpg">
+            <source media="(max-width: 600px)" srcset="img/row-1-1-600@1x.webp 1x, img/row-1-1-600@2x.webp 2x, img/row-1-1-600@3x.webp 3x" type="image/webp">
             <img class="image-card__image" src="img/row-1-1-600@1x.jpg"
             srcset="img/row-1-1-600@2x.jpg 2x, img/row-1-1-600@3x.jpg 3x" alt="">
           </picture>
         </div>
-
         <section class="index-main__card bike-card">
           <div class="bike-card__content-wrapper">
             <svg class="bike-card__icon" width="41" height="30" role="presentation">
@@ -106,28 +105,28 @@
           </div>
         </section>
         <div class="image-card index-main__image-card index-main__image-card">
-          <svg class="image-card__icon" width="177" height="152" role="img" alt="Vintage 79. Hand crafted bicycles">
+          <svg class="image-card__icon" width="177" height="152" role="img">
             <title>Vintage 79. Hand crafted bicycles</title>
             <use xlink:href="img/sprite.svg#main-logo-2"></use>
           </svg>
           <picture>
-            <source media="(min-width:1001px)" srcset="img/row-2-2-orig@1x.webp 1x, img/row-2-2-orig@2x.webp 2x, img/row-2-2-orig@3x.webp 3x" type="image/webp">
-            <source media="(min-width:1001px)" srcset="img/row-2-2-orig@1x.jpg 1x, img/row-2-2-orig@2x.jpg 2x, img/row-2-2-orig@3x.jpg 3x" type="image/jpg">
-            <source media="(min-width:601px)" srcset="img/row-2-2-1000@1x.webp 1x, img/row-2-2-1000@2x.webp 2x, img/row-2-2-1000@3x.webp 3x" type="image/webp">
-            <source media="(min-width:601px)" srcset="img/row-2-2-1000@1x.jpg 1x, img/row-2-2-1000@2x.jpg 2x, img/row-2-2-1000@3x.jpg 3x" type="image/jpg">
-            <source media="(max-width:600px)" srcset="img/row-2-2-600@1x.webp 1x, img/row-2-2-600@2x.webp 2x, img/row-2-2-600@3x.webp 3x" type="image/webp">
+            <source media="(min-width: 1001px)" srcset="img/row-2-2-orig@1x.webp 1x, img/row-2-2-orig@2x.webp 2x, img/row-2-2-orig@3x.webp 3x" type="image/webp">
+            <source media="(min-width: 1001px)" srcset="img/row-2-2-orig@1x.jpg 1x, img/row-2-2-orig@2x.jpg 2x, img/row-2-2-orig@3x.jpg 3x" type="image/jpg">
+            <source media="(min-width: 601px)" srcset="img/row-2-2-1000@1x.webp 1x, img/row-2-2-1000@2x.webp 2x, img/row-2-2-1000@3x.webp 3x" type="image/webp">
+            <source media="(min-width: 601px)" srcset="img/row-2-2-1000@1x.jpg 1x, img/row-2-2-1000@2x.jpg 2x, img/row-2-2-1000@3x.jpg 3x" type="image/jpg">
+            <source media="(max-width: 600px)" srcset="img/row-2-2-600@1x.webp 1x, img/row-2-2-600@2x.webp 2x, img/row-2-2-600@3x.webp 3x" type="image/webp">
             <img class="image-card__image" src="img/row-2-2-600@1x.jpg"
             srcset="img/row-2-2-600@2x.jpg 2x, img/row-2-2-600@3x.jpg 3x" alt="">
           </picture>
         </div>
         <div class="image-card index-main__image-card index-main__image-card--mini">
-          <svg class="image-card__icon" width="208" height="67" role="img" alt="Bicycles. Since 1926">
+          <svg class="image-card__icon" width="208" height="67" role="img">
             <title>Bicycles. Since 1926</title>
             <use xlink:href="img/sprite.svg#main-logo-3"></use>
           </svg>
           <picture>
-            <source media="(min-width:601px)" srcset="img/row-3-1-orig@1x.webp 1x, img/row-3-1-orig@2x.webp 2x, img/row-3-1-orig@3x.webp 3x" type="image/webp">
-            <source media="(min-width:601px)" srcset="img/row-3-1-orig@1x.jpg 1x, img/row-3-1-orig@2x.jpg 2x, img/row-3-1-orig@3x.jpg 3x" type="image/jpg">
+            <source media="(min-width: 601px)" srcset="img/row-3-1-orig@1x.webp 1x, img/row-3-1-orig@2x.webp 2x, img/row-3-1-orig@3x.webp 3x" type="image/webp">
+            <source media="(min-width: 601px)" srcset="img/row-3-1-orig@1x.jpg 1x, img/row-3-1-orig@2x.jpg 2x, img/row-3-1-orig@3x.jpg 3x" type="image/jpg">
             <source srcset="img/row-3-1-600@1x.webp 1x, img/row-3-1-600@2x.webp 2x, img/row-3-1-600@3x.webp 3x" type="image/webp">
             <img class="image-card__image" src="img/row-3-1-600@1x.jpg"
             srcset="img/row-3-1-600@2x.jpg 2x, img/row-3-1-600@3x.jpg 3x" alt="">
@@ -148,15 +147,15 @@
           </div>
           <div class="bike-card__image-wrapper">
             <picture>
-              <source srcset="img/row-3-2-orig-orig@1x.webp 1x, img/row-3-2-orig-orig@2x.webp 2x, img/row-3-2-orig-orig@3x.webp 3x" type="image/webp">
+              <source srcset="img/row-3-2-orig@1x.webp 1x, img/row-3-2-orig@2x.webp 2x, img/row-3-2-orig@3x.webp 3x" type="image/webp">
               <img class="bike-card__image" src="img/row-3-2-orig@1x.jpg" srcset="img/row-3-2-orig@2x.jpg 2x, img/row-3-2-orig@3x.jpg 3x" alt="">
             </picture>
           </div>
         </section>
         <div class="image-card index-main__image-card index-main__image-card--mini">
           <picture>
-            <source media="(max-width:1000px and min-width:601px)" srcset="img/row-3-3-1000@1x.webp 1x, img/row-3-3-1000@2x.webp 2x, img/row-3-3-1000@3x.webp 3x" type="image/webp">
-            <source media="(max-width:1000px and min-width:601px)" srcset="img/row-3-3-1000@1x.jpg 1x, img/row-3-3-1000@2x.jpg 2x, img/row-3-3-1000@3x.jpg 3x" type="image/jpg">
+            <source media="(max-width: 1000px) and (min-width: 601px)" srcset="img/row-3-3-1000@1x.webp 1x, img/row-3-3-1000@2x.webp 2x, img/row-3-3-1000@3x.webp 3x" type="image/webp">
+            <source media="(max-width: 1000px) and (min-width: 601px)" srcset="img/row-3-3-1000@1x.jpg 1x, img/row-3-3-1000@2x.jpg 2x, img/row-3-3-1000@3x.jpg 3x" type="image/jpg">
             <source srcset="img/row-3-3-orig@1x.webp 1x, img/row-3-3-orig@2x.webp 2x, img/row-3-3-orig@3x.webp 3x" type="image/webp">
             <img class="image-card__image" src="img/row-3-3-orig@1x.jpg"
             srcset="img/row-3-3-orig@2x.jpg 2x, img/row-3-3-orig@3x.jpg 3x" alt="">
@@ -167,9 +166,9 @@
           <ul class="slider__list">
             <li class="slider__slide">
               <article class="social-message">
-                <h1 class="visually-hidden">
+                <h3 class="visually-hidden">
                   Twitter message
-                </h1>
+                </h3>
                 <svg class="social-message__icon" width="32" height="27">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
@@ -189,9 +188,9 @@
             </li>
             <li class="slider__slide">
               <article class="social-message">
-                <h1 class="visually-hidden">
+                <h3 class="visually-hidden">
                   Twitter message
-                </h1>
+                </h3>
                 <svg class="social-message__icon" width="32" height="27">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
@@ -211,9 +210,9 @@
             </li>
             <li class="slider__slide">
               <article class="social-message">
-                <h1 class="visually-hidden">
+                <h3 class="visually-hidden">
                   Twitter message
-                </h1>
+                </h3>
                 <svg class="social-message__icon" width="32" height="27">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
@@ -282,71 +281,72 @@
           </div>
           <div class="shop__image-container shop__image-container--double-horisontal">
             <a class="shop__to-shop-link" href="#">
-            <div class="shop__link-icon-wrapper">
-              <svg class="shop__link-icon" width="50" height="50" viewBox="0 0 432.138 432.138">
-                <path d="M344.191,168.108c-7.943,0-15.641,1.065-22.966,3.048l-12.992-35.019h4.499c13.233,0,24-10.766,24-24  c0-13.233-10.767-24-24-24H288c-4.418,0-8,3.582-8,8s3.582,8,8,8h24.732c4.411,0,8,3.589,8,8s-3.589,8-8,8h-16H147.258l-4.717-8.25  h16.293c4.418,0,8-3.582,8-8s-3.582-8-8-8h-39.257c-2.253,0-4.129-1.023-5.577-3.041c-2.578-3.589-7.573-4.41-11.165-1.833  c-3.589,2.577-4.409,7.575-1.833,11.164c4.431,6.17,11.201,9.709,18.575,9.709h4.532l8.574,14.994L112.834,171.7  c-7.895-2.333-16.247-3.592-24.888-3.592C39.452,168.108,0,207.561,0,256.054S39.452,344,87.946,344  c45.939,0,83.758-35.407,87.616-80.363h8.127c0.642,0,1.262-0.084,1.86-0.226c2.715,11.196,11.441,20.066,22.559,22.979v9.413  c0,4.418,3.582,8,8,8H240c4.418,0,8-3.582,8-8s-3.582-8-8-8h-15.892v-1.439c13.428-3.563,23.355-15.818,23.355-30.352  c0-7.426-2.596-14.253-6.922-19.635l54.453-89.926l11.235,30.281c-29.542,14.195-49.984,44.416-49.984,79.323  c0,48.494,39.452,87.946,87.946,87.946s87.946-39.453,87.946-87.946S392.686,168.108,344.191,168.108z M87.946,328  C48.275,328,16,295.726,16,256.054s32.275-71.946,71.946-71.946c6.337,0,12.482,0.832,18.34,2.377l-29.19,65.913  c-1.096,2.474-0.867,5.335,0.609,7.603s3.999,3.636,6.705,3.636h75.079C155.689,299.757,125.056,328,87.946,328z M121.213,192.292  c20.601,10.792,35.35,31.266,38.171,55.345H96.703L121.213,192.292z M175.488,247.637c-2.919-30.602-21.583-56.678-47.779-70.013  l14.834-33.496l51.3,89.718c-3.833,3.842-6.674,8.67-8.116,14.064c-0.652-0.172-1.332-0.272-2.037-0.272H175.488z M208.108,225.634  c-0.153,0.04-0.303,0.087-0.455,0.129l-5.742-10.043h6.197V225.634z M224.108,269.12v-13.334c0-4.418-3.582-8-8-8s-8,3.582-8,8  v13.39c-4.455-2.702-7.447-7.584-7.447-13.163c0-8.492,6.909-15.401,15.401-15.401s15.401,6.909,15.401,15.401  C231.464,261.553,228.512,266.406,224.108,269.12z M227.622,226.825c-1.141-0.454-2.312-0.846-3.514-1.165v-17.939  c0-4.418-3.664-8-8.082-8h-23.264l-36.357-63.583h126.13L227.622,226.825z M344.191,328c-39.671,0-71.946-32.275-71.946-71.946  c0-28.035,16.129-52.359,39.585-64.227l24.861,67.009c1.196,3.225,4.251,5.22,7.501,5.219c0.924,0,1.864-0.161,2.782-0.501  c4.142-1.537,6.254-6.141,4.717-10.283l-24.869-67.031c5.566-1.385,11.381-2.133,17.369-2.133c39.671,0,71.946,32.275,71.946,71.946  S383.862,328,344.191,328z" fill="#FFFFFF"/>
-              </svg>
-              <p>Shop Now</p>
-            </div>
+              <div class="shop__link-icon-wrapper">
+                <svg class="shop__link-icon" width="50" height="50" viewBox="0 0 432.138 432.138">
+                  <path d="M344.191,168.108c-7.943,0-15.641,1.065-22.966,3.048l-12.992-35.019h4.499c13.233,0,24-10.766,24-24  c0-13.233-10.767-24-24-24H288c-4.418,0-8,3.582-8,8s3.582,8,8,8h24.732c4.411,0,8,3.589,8,8s-3.589,8-8,8h-16H147.258l-4.717-8.25  h16.293c4.418,0,8-3.582,8-8s-3.582-8-8-8h-39.257c-2.253,0-4.129-1.023-5.577-3.041c-2.578-3.589-7.573-4.41-11.165-1.833  c-3.589,2.577-4.409,7.575-1.833,11.164c4.431,6.17,11.201,9.709,18.575,9.709h4.532l8.574,14.994L112.834,171.7  c-7.895-2.333-16.247-3.592-24.888-3.592C39.452,168.108,0,207.561,0,256.054S39.452,344,87.946,344  c45.939,0,83.758-35.407,87.616-80.363h8.127c0.642,0,1.262-0.084,1.86-0.226c2.715,11.196,11.441,20.066,22.559,22.979v9.413  c0,4.418,3.582,8,8,8H240c4.418,0,8-3.582,8-8s-3.582-8-8-8h-15.892v-1.439c13.428-3.563,23.355-15.818,23.355-30.352  c0-7.426-2.596-14.253-6.922-19.635l54.453-89.926l11.235,30.281c-29.542,14.195-49.984,44.416-49.984,79.323  c0,48.494,39.452,87.946,87.946,87.946s87.946-39.453,87.946-87.946S392.686,168.108,344.191,168.108z M87.946,328  C48.275,328,16,295.726,16,256.054s32.275-71.946,71.946-71.946c6.337,0,12.482,0.832,18.34,2.377l-29.19,65.913  c-1.096,2.474-0.867,5.335,0.609,7.603s3.999,3.636,6.705,3.636h75.079C155.689,299.757,125.056,328,87.946,328z M121.213,192.292  c20.601,10.792,35.35,31.266,38.171,55.345H96.703L121.213,192.292z M175.488,247.637c-2.919-30.602-21.583-56.678-47.779-70.013  l14.834-33.496l51.3,89.718c-3.833,3.842-6.674,8.67-8.116,14.064c-0.652-0.172-1.332-0.272-2.037-0.272H175.488z M208.108,225.634  c-0.153,0.04-0.303,0.087-0.455,0.129l-5.742-10.043h6.197V225.634z M224.108,269.12v-13.334c0-4.418-3.582-8-8-8s-8,3.582-8,8  v13.39c-4.455-2.702-7.447-7.584-7.447-13.163c0-8.492,6.909-15.401,15.401-15.401s15.401,6.909,15.401,15.401  C231.464,261.553,228.512,266.406,224.108,269.12z M227.622,226.825c-1.141-0.454-2.312-0.846-3.514-1.165v-17.939  c0-4.418-3.664-8-8.082-8h-23.264l-36.357-63.583h126.13L227.622,226.825z M344.191,328c-39.671,0-71.946-32.275-71.946-71.946  c0-28.035,16.129-52.359,39.585-64.227l24.861,67.009c1.196,3.225,4.251,5.22,7.501,5.219c0.924,0,1.864-0.161,2.782-0.501  c4.142-1.537,6.254-6.141,4.717-10.283l-24.869-67.031c5.566-1.385,11.381-2.133,17.369-2.133c39.671,0,71.946,32.275,71.946,71.946  S383.862,328,344.191,328z" fill="#FFFFFF"/>
+                </svg>
+                <p>Shop Now</p>
+              </div>
+              <picture>
+                <source srcset="img/shop-5@1x.webp 1x, img/shop-5@2x.webp 2x" type="image/webp">
+                <img class="shop-image shop-image" src="img/shop-5@1x.jpg" srcset="img/shop-5@2x.jpg 2x" alt="">
+              </picture>
+            </a>
+          </div>
+          <div class="shop__image-container shop__image-container--double-horisontal">
             <picture>
-              <source srcset="img/shop-5@1x.webp 1x, img/shop-5@2x.webp 2x" type="image/webp">
-              <img class="shop-image shop-image" src="img/shop-5@1x.jpg" srcset="img/shop-5@2x.jpg 2x" alt="">
+              <source srcset="img/shop-6@1x.webp 1x, img/shop-6@2x.webp 2x" type="image/webp">
+              <img class="shop-image shop-image" src="img/shop-6@1x.jpg" srcset="img/shop-6@2x.jpg 2x" alt="">
             </picture>
-          </a>
-        </div>
-        <div class="shop__image-container shop__image-container--double-horisontal">
-          <picture>
-            <source srcset="img/shop-6@1x.webp 1x, img/shop-6@2x.webp 2x" type="image/webp">
-            <img class="shop-image shop-image" src="img/shop-6@1x.jpg" srcset="img/shop-6@2x.jpg 2x" alt="">
-          </picture>
-        </div>
-        <div class="shop__image-container">
-          <picture>
-            <source srcset="img/shop-7@1x.webp 1x, img/shop-7@2x.webp 2x" type="image/webp">
-            <img class="shop-image" src="img/shop-7@1x.jpg" srcset="img/shop-7@2x.jpg 2x" alt="">
-          </picture>
-        </div>
-        <div class="shop__image-container">
-          <picture>
-            <source srcset="img/shop-8@1x.webp 1x, img/shop-8@2x.webp 2x" type="image/webp">
-            <img class="shop-image" src="img/shop-8@1x.jpg" srcset="img/shop-8@2x.jpg 2x" alt="">
-          </picture>
-        </div>
-        <div class="shop__discover-shop">
-          <a href="#" class="shop__discover-shop-link">
-            <svg class="shop__discover-rule" role="presentation">
-              <rect width="100%" height="100%" style="fill: none;"></rect>
+          </div>
+          <div class="shop__image-container">
+            <picture>
+              <source srcset="img/shop-7@1x.webp 1x, img/shop-7@2x.webp 2x" type="image/webp">
+              <img class="shop-image" src="img/shop-7@1x.jpg" srcset="img/shop-7@2x.jpg 2x" alt="">
+            </picture>
+          </div>
+          <div class="shop__image-container">
+            <picture>
+              <source srcset="img/shop-8@1x.webp 1x, img/shop-8@2x.webp 2x" type="image/webp">
+              <img class="shop-image" src="img/shop-8@1x.jpg" srcset="img/shop-8@2x.jpg 2x" alt="">
+            </picture>
+          </div>
+          <div class="shop__discover-shop">
+            <a href="#" class="shop__discover-shop-link">
+              <svg class="shop__discover-rule" role="presentation">
+                <rect width="100%" height="100%" style="fill: none;"></rect>
+              </svg>
+              Discover the shop
+            </a>
+          </div>
+        </section>
+        <section class="subscribe index-main__subscribe">
+          <h2 class="visually-hidden">Subscribe to us</h2>
+          <form class="subscribe__form" action="#">
+            <svg role="presentation" class="subscribe__icon" width="96" height="85">
+              <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
-            Discover the shop
-          </a>
-        </div>
-      </section>
-      <section class="subscribe index-main__subscribe">
-        <h2 class="visually-hidden">Subscribe to us</h2>
-        <form class="subscribe__form" action="#">
-          <svg role="presentation" class="subscribe__icon" width="96" height="85">
-            <use xlink:href="img/sprite.svg#logo"></use>
-          </svg>
-          <p class="subscribe__title">Stay on the saddle!</p>
-          <p class="subscribe-row">
-            <label class="visually-hidden" for="subscribe__email">Email</label>
-            <input id="subscribe__email" required type="email" class="subscribe__input" placeholder="john.doe@example.com">
-            <button class="subscribe__submit" type="submit" name="submit">Go</button>
-          </p>
-        </form>
-      </section>
+            <p class="subscribe__title">Stay on the saddle!</p>
+            <p class="subscribe-row">
+              <label class="visually-hidden" for="subscribe__email">Email</label>
+              <input id="subscribe__email" required type="email" class="subscribe__input" placeholder="john.doe@example.com">
+              <button class="subscribe__submit" type="submit" name="submit">Go</button>
+            </p>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
       <section class="address">
-        <h1 class="visually-hidden">Address</h1>
+        <h2 class="visually-hidden">Address</h2>
           <b>AOD New York</b> <br>
           2250 Lexington Avenue <br>
           New York, NY 10035  - info@domain.com
       </section>
       <section class="socials">
-        <h1 class="visually-hidden">
+        <h2 class="visually-hidden">
           Follow us in socials
-        </h1>
+        </h2>
         <ul class="socials__lsit">
           <li class="socials__item">
             <a href="#">
@@ -375,10 +375,10 @@
         </ul>
       </section>
       <section class="copyright">
-        <h1 class="visually-hidden">copyright</h1>
+        <h2 class="visually-hidden">copyright</h2>
         <span>Handcrafted by</span>
         <a href="http://www.yebocreative.com/en/hey/">
-          <svg width="55" height="36" role="img" alt="Yebo">
+          <svg width="55" height="36" role="img">
             <title>Yebo</title>
             <use xlink:href="img/sprite.svg#yebo-logo"></use>
           </svg>
