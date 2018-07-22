@@ -75,12 +75,13 @@
     z-index: 20;
   }
 
-  .main-nav__menu-toggle div {
+  .main-nav__menu-toggle span {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
+    display: block;
     margin: auto;
     height: 5px;
     width: 50px;
@@ -88,8 +89,8 @@
     transition: background-color 0.2s ease-out;
   }
 
-  .main-nav__menu-toggle div::before,
-  .main-nav__menu-toggle div::after {
+  .main-nav__menu-toggle span::before,
+  .main-nav__menu-toggle span::after {
     content: '';
     position: absolute;
     display: block;
@@ -100,24 +101,24 @@
     transition-duration: 0.3s;
   }
 
-  .main-nav__menu-toggle div::before {
+  .main-nav__menu-toggle span::before {
     top: 15px;
   }
 
-  .main-nav__menu-toggle div::after {
+  .main-nav__menu-toggle span::after {
     bottom: 15px;
   }
 
-  .main-nav__menu-toggle--opened div {
+  .main-nav__menu-toggle--opened span {
     background-color: transparent;
   }
 
-  .main-nav__menu-toggle--opened div::before {
+  .main-nav__menu-toggle--opened span::before {
     top: 0;
     transform: rotate(45deg);
   }
 
-  .main-nav__menu-toggle--opened div::after {
+  .main-nav__menu-toggle--opened span::after {
     bottom: 0;
     transform: rotate(-45deg);
   }
