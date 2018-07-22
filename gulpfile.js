@@ -11,7 +11,8 @@ const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync');
 const notify = require('gulp-notify');
 const webp = require('gulp-webp');
-const uglify = require('gulp-uglify-es').default;
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 gulp.task('clean', function () {
   return del('build');
 });
@@ -88,7 +89,10 @@ gulp.task("webp", function() {
 });
 
 gulp.task('js', function () {
-  return gulp.src("source/js/*.js", { base: 'source' })
+  return gulp.src(["source/js/*.js", "!source/js/*.min.js"], { base: 'source' })
+  .pipe(babel({
+        presets: ['env']
+    }))
   .pipe(uglify())
   .pipe(gulp.dest("build"))
 });
@@ -97,7 +101,8 @@ gulp.task('copy', function () {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
     "source/*.html",
-    "source/favicon/*"
+    "source/favicon/*",
+    "source/js/*.min.js"
   ], { base: 'source' })
   .pipe(gulp.dest("build"));
 });
