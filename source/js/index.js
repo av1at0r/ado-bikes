@@ -99,36 +99,36 @@ class Slider {
       return;
     }
     if (this.detecting){
-    	this.detect(e);
+      this.detect(e);
     }
     if (this.started){
-    	this.draw(e);
+      this.draw(e);
     }
   }
 
   detect(e) {
     let changedTouch = e.changedTouches.item(this.touch.identifier);
-  	if (!changedTouch){
-  		return;
-  	}
+    if (!changedTouch){
+      return;
+    }
 
-  	if (Math.abs(this.x - changedTouch.clientX) >= Math.abs(this.y - changedTouch.clientY)) {
-  		e.preventDefault();
-  		this.started = true;
-  	}
-  	this.detecting = false;
+    if (Math.abs(this.x - changedTouch.clientX) >= Math.abs(this.y - changedTouch.clientY)) {
+      e.preventDefault();
+      this.started = true;
+    }
+    this.detecting = false;
   }
 
   draw(e) {
     e.preventDefault();
     let changedTouch = e.changedTouches.item(this.touch.identifier);
     if (!changedTouch) {
-  		return;
-  	}
+      return;
+    }
     this.delta = this.x - changedTouch.clientX;
     if (this.delta > 0 && !this.rightSlide || this.delta < 0 && !this.leftSlide){
-  		this.delta = this.delta / 5;
-  	}
+      this.delta = this.delta / 5;
+    }
     this.moveTo(this.delta);
   }
 
@@ -149,7 +149,7 @@ class Slider {
 
   touchEnd(e) {
     if (!e.changedTouches.item(this.touch.identifier) || !this.started){
-    	return;
+      return;
     }
     e.preventDefault();
     const showSlide =  this.delta < 0 ? this.leftSlide : this.rightSlide;

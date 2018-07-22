@@ -1,8 +1,8 @@
 {
-  "name": "gllacy",
+  "name": "aod-bikes",
   "version": "0.1.0",
   "private": true,
-  "description": "Проект «Gllacy» от HTML Academy",
+  "description": "Верстка макета bicycle-theme",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^8.6.2",
@@ -47,7 +47,6 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
