@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/av1at0r/aod-bikes.svg?branch=master)](https://travis-ci.org/av1at0r/aod-bikes)
 
-[Просмотреть](https://av1at0r.github.io/aod-bikes/ "Перейти на страницу Sedona")
+[Просмотреть](https://livyk.github.io/aod-bikes/ "Перейти на страницу Sedona")
 
 *Страница создана в целях потрогать Grid layout и поддерживается только актуальными браузерами - кроссбраузерность целью не являлась.*
 
